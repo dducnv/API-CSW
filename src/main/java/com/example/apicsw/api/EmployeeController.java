@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://client-csw.vercel.app/")
+@CrossOrigin(origins = {"https://client-csw.vercel.app/","localhost:3000"})
 @RestController
 @RequestMapping("/api/employee")
 @RequiredArgsConstructor
