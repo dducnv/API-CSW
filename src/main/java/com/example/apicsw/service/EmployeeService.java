@@ -36,7 +36,7 @@ public class EmployeeService {
     }
 
     public Employee update(Employee employeeDto,Long id) {
-        Optional<Employee> optionalEmployee = employeeRepository.findById(id);
+            Optional<Employee> optionalEmployee = employeeRepository.findById(id);
         Employee employee = optionalEmployee.get();
         employee.setName(employeeDto.getName());
         employee.setSalary(employeeDto.getSalary());
